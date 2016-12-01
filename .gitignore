@@ -1,0 +1,9 @@
+# Ignore generated files
+node_modules
+coverage
+build
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
