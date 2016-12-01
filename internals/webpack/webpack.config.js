@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-  entry: path.join(process.cwd(), 'src/index.js'),
+  entry: path.join(process.cwd(), 'src/main.js'),
   output: {
     path: "build",
     filename: "bundle.js"
