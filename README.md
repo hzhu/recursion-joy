@@ -2,7 +2,7 @@
 
 A set of recursion problems to be solved.
 
-Unit test setup based on karma-template boilerplate.
+Unit test setup based on [karma-template](https://github.com/hzhu/karma-template) boilerplate.
 
 #### Quick start
 0) If you do not already have webpack-dev-server
