@@ -1,5 +1,7 @@
 ### Recursion Joy
 
+Oh the joy of recursion; by joy I mean pain. That is, until you go over these problems. Then life is swell.
+
 A set of recursion problems to be solved.
 
 Unit test setup based on [karma-template](https://github.com/hzhu/karma-template) boilerplate.

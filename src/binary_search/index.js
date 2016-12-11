@@ -1,6 +1,6 @@
 /**
  * If value is found, return the index of value
  */
-function binary_search(array, value) {
+export default function binary_search(array, value) {
 
 }
