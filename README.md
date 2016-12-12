@@ -1,8 +1,17 @@
 ### Recursion Joy
-
-Oh the joy of recursion; by joy I mean pain. That is, until you go over these problems. Then life is swell.
-
 A set of recursion problems to be solved.
+
+[What on Earth is Recursion? - Computerphile](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
+
+### Important
+Due to the nature of recursion, it is critical to identify your base case(s). Base cases tell a recursive function when to stop, preventing the function from calling infinitly.
+
+Double check base cases if the unit tests throw:
+```
+  RangeError: Maximum call stack size exceeded
+```
+
+
 
 Unit test setup based on [karma-template](https://github.com/hzhu/karma-template) boilerplate.
 

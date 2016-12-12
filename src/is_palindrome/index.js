@@ -1,4 +1,4 @@
-export default function is_palindrome(str) {
+function is_palindrome(str) {
   if (str.length < 2) return true
 
   if (str[0] === str[str.length - 1]) {
@@ -7,3 +7,5 @@ export default function is_palindrome(str) {
     return false
   }
 }
+
+export default is_palindrome
