@@ -5,7 +5,7 @@ import Fibonacci from './index'
 
 
 describe('Fibonacci', () => {
-  it('Fibonacci should be a constructor', () => {
+  it('should be a constructor', () => {
     const fib = new Fibonacci()
     expect(fib).to.be.an.instanceof(Fibonacci)
   })
