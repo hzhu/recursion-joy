@@ -5,7 +5,7 @@ function binary_search(array, start, end, value) {
 
   if (array[mid] === value) return mid
 
-  if (array[mid] > value) { // our value must be on left side
+  if (array[mid] > value) {
     return binary_search(array, start, mid - 1, value)
   } else {
     return binary_search(array, mid + 1, end, value)
