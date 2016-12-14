@@ -14,7 +14,12 @@ describe('merge', () => {
 
 
 describe('mergesort', () => {
-  it('should sort a single unsorted list', () => {
+  it('should sort a single element', () => {
+    const sorted = mergesort([1])
+    expect(sorted).to.deep.equal([1])
+  })
+
+  it('should sort a list of numbers', () => {
     const sorted = mergesort([2, 1, 3, -1])
     expect(sorted).to.deep.equal([-1, 1, 2, 3])
   })
@@ -22,5 +27,10 @@ describe('mergesort', () => {
   it('should handle repeating elements', () => {
     const sorted = mergesort([2, 1, 3, 3, -1])
     expect(sorted).to.deep.equal([-1, 1, 2, 3, 3])
+  })
+
+  it('should sort a list of words', () => {
+    const sorted = mergesort(['banana', 'apple', 'carrot'])
+    expect(sorted).to.deep.equal(['apple', 'banana', 'carrot'])
   })
 })

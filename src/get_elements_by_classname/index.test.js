@@ -3,7 +3,7 @@ import get_elements_by_classname from './index'
 
 
 describe('get_elements_by_classname', () => {
-  beforeEach(function append_mock_node() {
+  beforeEach(function append_mock_element() {
     const body = document.body
     const div = document.createElement('div')
 
