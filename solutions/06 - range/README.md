@@ -1,4 +1,4 @@
-Write a range function that generates a range of numeric values.
+Write a recursive `range` function that generates a range of numeric values.
 
 ```
 range(0)      => [0]

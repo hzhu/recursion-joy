@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 
-const modules = ['src','node_modules']
+const modules = ['solutions','node_modules']
 
 module.exports = {
   devtool: 'inline-source-map',
