@@ -29,7 +29,7 @@ describe('Fibonacci', () => {
     expect(fib.at_index(2)).to.equal(1)
   })
 
-  it('should have an object for caching', () => {
+  it('should have an object named memo for caching', () => {
     const fib = new Fibonacci
     assert.isObject(fib.memo)
   })
@@ -38,5 +38,10 @@ describe('Fibonacci', () => {
     const fib = new Fibonacci()
     fib.at_index(10)
     expect(fib.memo[5]).to.equal(5)
+  })
+
+  it('should calculate the Fibonacci number at index n', () => {
+    const fib = new Fibonacci()
+    expect(fib.at_index(10)).to.be.equal(55)
   })
 })
