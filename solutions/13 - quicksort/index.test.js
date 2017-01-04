@@ -17,12 +17,20 @@ describe('swap', () => {
 
 
 describe('partition', () => {
-  it('should partition an array and return the pivots index', () => {
+  it('should partition an array and return the pivot index', () => {
     const list = [4, 2, 1, 0, 5, 3]
     const p_index = partition(list, 0, list.length - 1)
 
     expect(list).to.deep.equal([2, 1, 0, 3, 5, 4])
     expect(p_index).to.equal(3)
+  })
+
+  it('should handle a list with a single element', () => {
+    const list = [1]
+    const p_index = partition(list, 0, list.length - 1)
+
+    expect(list).to.deep.equal([1])
+    expect(p_index).to.equal(0)
   })
 })
 
