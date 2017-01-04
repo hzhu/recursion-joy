@@ -1,25 +1,16 @@
-function gcd(x, y) {
-  if (x > y) {
-    // x = y * q + r
-    let q = Math.floor(x/y) // 1
-    let r = x - (y * q)
-    x = y * q + r
+function gcd(a, b) {
+  if (b < a) {
+    let temp = a
+    a = b
+    b = temp
+  }
 
-    if (r === 0) {
-      return y
-    } else {
-      return gcd(r, y)
-    }
+  let r = b % a
+
+  if (r === 0) {
+    return a
   } else {
-    let q = Math.floor(y/x) // 1
-    let r = y - (x * q)
-    y = x * q + r
-
-    if (r === 0) {
-      return x
-    } else {
-      return gcd(r, x)
-    }
+    return gcd(r, a)
   }
 }
 
