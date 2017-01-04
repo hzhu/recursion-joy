@@ -14,7 +14,6 @@ export function merge(left, right, array) {
       array[a_index] = right[r_index]
       r_index++
     }
-
     a_index++
   }
 
@@ -22,9 +21,7 @@ export function merge(left, right, array) {
 }
 
 export function mergesort(array) {
-  if (array.length < 2) {
-    return array
-  }
+  if (array.length < 2) return array
 
   const mid = Math.floor(array.length * 0.5)
 
