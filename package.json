@@ -9,9 +9,7 @@
   "author": "Henry Zhu <hz@henryzhu.me> (http://henryzhu.me)",
   "license": "MIT",
   "scripts": {
-    "setup": "mkdir build && cp ./solutions/index.html ./build",
     "clean": "rimraf build coverage",
-    "start": "webpack-dev-server --inline --hot --config ./internals/webpack/webpack.config.js --content-base build/",
     "test": "cross-env NODE_ENV=test karma start internals/testing/karma.conf.js --single-run",
     "test:watch": "npm run test -- --auto-watch --no-single-run"
   },

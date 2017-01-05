@@ -4,6 +4,7 @@ export function swap(array, a, b) {
   array[b] = temp
 }
 
+
 export function partition(array, start, end) {
   let pivot = array[end]
   let p_index = start
@@ -18,6 +19,7 @@ export function partition(array, start, end) {
   swap(array, p_index, end)
   return p_index
 }
+
 
 export function quicksort(array, start, end) {
   if (start < end) {

@@ -1,4 +1,4 @@
-Write a function that computes the [Greatest Common Divisor](https://www.hackerrank.com/challenges/functional-programming-warmups-in-recursion---gcd) of two numbers.
+Write a function that computes the [Greatest Common Divisor](https://www.youtube.com/watch?v=p5gn2hj51hs) of two numbers.
 
 ```
 gcd(1,5)    => 1

@@ -2,6 +2,7 @@ function Fibonacci() {
   this.memo = {}
 }
 
+
 Fibonacci.prototype.at_index = function (n) {
   if (n === 0 || n === 1) {
     return n

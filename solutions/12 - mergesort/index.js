@@ -20,6 +20,7 @@ export function merge(left, right, array) {
   return array
 }
 
+
 export function mergesort(array) {
   if (array.length < 2) return array
 

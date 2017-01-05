@@ -48,7 +48,7 @@ describe('quicksort', () => {
     expect(list).to.deep.equal([-3, 1, 2])
   })
 
-  it('should sort an list with repeating & duplicate elements', () => {
+  it('should sort an list of repeating & duplicate elements', () => {
     const list = [0, 10, 4, 2, 8, 1, 3, 3, 0, 6]
     quicksort(list, 0, list.length - 1)
     expect(list).to.deep.equal([0, 0, 1, 2, 3, 3, 4, 6, 8, 10])
