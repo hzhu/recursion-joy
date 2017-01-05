@@ -25,11 +25,11 @@ export function mergesort(array) {
 
   const mid = Math.floor(array.length * 0.5)
 
-  const l = array.slice(0, mid)
-  const r = array.slice(mid, array.length)
+  const left = array.slice(0, mid)
+  const right = array.slice(mid, array.length)
 
-  mergesort(l)
-  mergesort(r)
+  mergesort(left)
+  mergesort(right)
 
-  return merge(l, r, array)
+  return merge(left, right, array)
 }
