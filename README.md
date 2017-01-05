@@ -2,6 +2,7 @@
 A set of recursion problems to be solved (solutions included).
 
 [![Build Status](https://img.shields.io/snap-ci/hzhu/recursion-joy/master.svg?style=flat-square)](https://snap-ci.com/hzhu/recursion-joy/branch/master)
+[![Coverage Status](https://img.shields.io/coveralls/hzhu/recursion-joy.svg?style=flat-square)](https://coveralls.io/github/hzhu/recursion-joy?branch=master)
 
 
 ### Getting Started

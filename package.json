@@ -11,7 +11,8 @@
   "scripts": {
     "clean": "rimraf build coverage",
     "test": "cross-env NODE_ENV=test karma start internals/testing/karma.conf.js --single-run",
-    "test:watch": "npm run test -- --auto-watch --no-single-run"
+    "test:watch": "npm run test -- --auto-watch --no-single-run",
+    "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
   },
   "precommit": "test",
   "babel": {
