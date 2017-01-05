@@ -1,13 +1,17 @@
 function max(list) {
-  if (list.length < 2) return list[0]
+  if (list.length === 1) return list[0]
+  if (list.length === 0) return list
 
-  if (list[0] > list[1]) {
-    list.splice(1,2)
-    return max(list)
+  const first = list[0]
+  const last = list[list.length - 1]
+
+  if (first > last) {
+    list.pop()
   } else {
-    list.splice(0,1)
-    return max(list)
+    list.shift()
   }
+
+  return max(list)
 }
 
 export default max
