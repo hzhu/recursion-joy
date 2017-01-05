@@ -1,3 +1,5 @@
+# exponent
+
 Write a recursive exponentiation function that raises a base by a power.
 
 Bonus: It should handle negative powers.

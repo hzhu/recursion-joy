@@ -1,3 +1,3 @@
-Write a recursive function to reverse a string.
+# reverse_string
 
-Write a recursive function to reverse the words in a string, i.e., ”cat is running” becomes ”running is cat”
+Write a recursive function to reverse a string, i.e., "cat" becomes "tac".

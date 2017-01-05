@@ -1,3 +1,5 @@
+# binary_search
+
 Write a function binary_search that finds the index of a value in a sorted list. If value is not found, return -1.
 
 The binary_search() function should accept four arguments:

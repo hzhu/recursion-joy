@@ -1,3 +1,5 @@
+# gcd
+
 Write a function that computes the [Greatest Common Divisor](https://www.youtube.com/watch?v=p5gn2hj51hs) of two numbers.
 
 ```
