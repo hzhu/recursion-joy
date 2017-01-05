@@ -1,6 +1,6 @@
 function sum_array(array) {
-  if (array.length === 1) {
-    return array[0]
+  if (array.length === 0) {
+    return 0
   }
 
   return array.pop() + sum_array(array)

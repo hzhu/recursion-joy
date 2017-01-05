@@ -12,4 +12,9 @@ describe('sum_array', () => {
     const six = sum_array([1,2,3])
     expect(six).to.equal(6)
   })
+
+  it('should handle empty lists', () => {
+    const empty = sum_array([])
+    expect(empty).to.deep.equal(0)
+  })
 })
