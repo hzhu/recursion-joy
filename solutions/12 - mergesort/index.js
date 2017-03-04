@@ -6,7 +6,7 @@ export function merge(left, right, array) {
   left.push(Infinity)
   right.push(Infinity)
 
-  for (let i = 0; i < array.length; i++) {
+  for (const item in array) {
     if (left[l_index] < right[r_index]) {
       array[a_index] = left[l_index]
       l_index++
