@@ -51,6 +51,7 @@ npm run test:watch
 * [11 - binary_search](https://github.com/hzhu/recursion-joy/tree/master/problems/11%20-%20binary_search)
 * [12 - mergesort](https://github.com/hzhu/recursion-joy/tree/master/problems/12%20-%20mergesort)
 * [13 - quicksort](https://github.com/hzhu/recursion-joy/tree/master/problems/13%20-%20quicksort)
+* [14 - string_permutations](https://github.com/hzhu/recursion-joy/tree/master/problems/14%20-%20string_permutations)
 
 ## Contributing
 PRs welcomed! Just submit a PR with a note (new recursion problem? better performance? readibility? bug fix? better testing?)
