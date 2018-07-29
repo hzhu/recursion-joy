@@ -1,3 +1,0 @@
-# quicksort
-
-Implement quicksort

@@ -1,3 +1,0 @@
-# mergesort
-
-Implement mergesort

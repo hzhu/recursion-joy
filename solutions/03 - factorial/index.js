@@ -1,6 +1,10 @@
 function factorial(n) {
-  if (n === 1) return 1
+  // base case
+  if (n === 1) {
+    return n
+  }
 
+  // recursive case
   return n * factorial(n - 1)
 }
 

@@ -1,36 +1,21 @@
-export function merge(left, right, array) {
-  let l_index = 0
-  let r_index = 0
-  let a_index = 0
+export function merge(left, right) {
+  const results = []
 
-  left.push(Infinity)
-  right.push(Infinity)
-
-  for (const item in array) {
-    if (left[l_index] < right[r_index]) {
-      array[a_index] = left[l_index]
-      l_index++
-    } else {
-      array[a_index] = right[r_index]
-      r_index++
-    }
-    a_index++
+  while(left.length && right.length) {
+    left[0] < right[0]
+      ? results.push(left.shift())
+      : results.push(right.shift())
   }
 
-  return array
+  return [...results, ...left, ...right]
 }
 
+export function mergeSort(arr) {
+  if (arr.length < 2) return arr
 
-export function mergesort(array) {
-  if (array.length < 2) return array
+  const mid = Math.floor(arr.length / 2)
+  const left = arr.slice(0, mid)
+  const right = arr.slice(mid)
 
-  const mid = Math.floor(array.length * 0.5)
-
-  const left = array.slice(0, mid)
-  const right = array.slice(mid, array.length)
-
-  mergesort(left)
-  mergesort(right)
-
-  return merge(left, right, array)
+  return merge(mergeSort(left), mergeSort(right))
 }

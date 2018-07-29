@@ -1,3 +1,3 @@
 # quicksort
 
-Implement quicksort
+Implement quicksort.

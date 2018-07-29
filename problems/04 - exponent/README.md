@@ -1,4 +1,4 @@
-# exponent
+# Exponent
 
 Write a recursive exponentiation function that raises a base by a power.
 

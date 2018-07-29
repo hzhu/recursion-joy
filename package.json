@@ -1,7 +1,6 @@
 {
   "name": "recursion-joy",
-  "version": "0.0.1",
-  "description": "Recursion problems.",
+  "description": "Recursion problems",
   "repository": {
     "type": "git",
     "url": "git://github.com/hzhu/recursion-joy.git"
@@ -9,45 +8,17 @@
   "author": "Henry Zhu <hz@henryzhu.me> (http://henryzhu.me)",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf coverage",
-    "test": "cross-env NODE_ENV=test karma start internals/testing/karma.conf.js --single-run",
-    "test:watch": "npm run test -- --auto-watch --no-single-run",
-    "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
+    "test": "jest /problems",
+    "test:problems": "jest /problems --watchAll",
+    "test:solutions": "jest /solutions --watchAll"
   },
-  "precommit": "test",
-  "babel": {
-    "presets": [
-      "stage-0"
-    ],
-    "env": {
-      "test": {
-        "plugins": [
-          "istanbul"
-        ]
-      }
-    }
+  "jest": {
+    "testURL": "http://localhost"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-istanbul": "4.1.1",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-stage-0": "6.24.1",
-    "chai": "3.5.0",
-    "coveralls": "2.13.0",
-    "cross-env": "4.0.0",
-    "karma": "1.6.0",
-    "karma-chrome-launcher": "2.0.0",
-    "karma-coverage": "1.1.1",
-    "karma-mocha": "1.3.0",
-    "karma-mocha-reporter": "2.2.3",
-    "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "2.0.3",
-    "mocha": "3.2.0",
-    "pre-commit": "^1.2.2",
-    "rimraf": "2.6.1",
-    "sinon": "^2.1.0",
-    "webpack": "2.4.1"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-jest": "^23.2.0",
+    "jest": "^23.2.0"
   }
 }
